@@ -5,7 +5,7 @@
 
     </div>
     <div class="col-2">
-            <button class="btn btn-info" (click)="create()"> + Create Product </button>
+            <button class="btn btn-info" (click)="create()"style="color: aliceblue;"> + Add Product </button>
     </div>
 
 <!--    <div class="col=10">-->
@@ -27,8 +27,8 @@
                 <td> LKR {{data.price}}</td>
                 <td>{{data.status}}</td>
                 <td *ngIf="data.status !== 'deleted'">
-                    <button class="btn btn-warning" style="margin-right: 5px" (click)="update(data)"> Update </button>
-                    <button class="btn btn-danger" (click)="remove(data._id)"> Remove </button>
+                    <button class="btn btn-warning" style="margin-right: 4px" (click)="update(data)" style="color: aliceblue;"> Update </button>&nbsp;
+                    <button class="btn btn-danger" style="margin-right: 4px" (click)="remove(data._id)" style="color: aliceblue;"> Remove </button>
                 </td>
             </tr>
 
