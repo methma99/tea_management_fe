@@ -24,8 +24,8 @@
             <tr *ngFor="let data of products">
                 <td>{{data.name}}</td>
                 <td>{{data.qty}}</td>
-                <td>{{data.status}}</td>
                 <td> LKR {{data.price}}</td>
+                <td>{{data.status}}</td>
                 <td *ngIf="data.status !== 'deleted'">
                     <button class="btn btn-warning" style="margin-right: 5px" (click)="update(data)"> Update </button>
                     <button class="btn btn-danger" (click)="remove(data._id)"> Remove </button>
