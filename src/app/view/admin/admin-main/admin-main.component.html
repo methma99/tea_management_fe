@@ -1,0 +1,35 @@
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-2 wrapper">
+            <div class="sidebar">
+
+                <ul>
+                    <li><a [routerLink]="['/admin/products']"><i class="fas fa-users"></i>Product List</a></li>
+                    <li><a [routerLink]="['/admin/orders']"><i class="fas fa-users"></i>Our Orders</a></li>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <li><a (click)="logout()"><i class="fas fa-users"></i><b>Log Out </b></a></li>
+                </ul>
+
+
+
+
+            </div>
+        </div>
+        <div class="col-10">
+            <br>
+            <router-outlet></router-outlet>
+        </div>
+
+    </div>
+</div>
+
+
+
+
